@@ -1,0 +1,100 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<!--Navbar-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="margin-left: 20px;" href="#">
+        <img class="logo" src="assets/images/Logo/LOUIS_Logo_blue_small.png" alt="">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Why LOUIS<span class="sr-only">(current)</span></a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="margin-top: 5px;">
+            <li><a class="dropdown-a" href="#">Assts</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a class="dropdown-a" href="#">Heritage</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a class="dropdown-a" href="#">Layers</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a class="dropdown-a" href="#">Referrals</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><button class="login-button" type="button" name="button">Log In</button></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--end Navbar-->
+<div class="main-container">
+  <router-outlet></router-outlet>
+</div>
+
+<!--Footer-->
+<footer class="footer-bs">
+    <div class="row">
+      <div class="col-md-3 footer-brand animated fadeInLeft">
+          <a class=""  href="#">
+            <img class="footer-logo" src="assets/images/Logo/LOUIS_Logo_blue_small.png" alt="">
+          </a>
+            <p>The LOUIS Toolkit is flexible and comprehensive data management solution designed for indigenous communities.</p>
+            <p>© 2018 QI, All rights reserved</p>
+        </div>
+      <div class="col-md-4 footer-nav animated fadeInUp">
+          <h4>Menu —</h4>
+          <div class="col-md-6">
+                <ul class="pages">
+                    <li><a href="#">Why LOUIS</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+          <div class="col-md-6">
+                <ul class="list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+      <div class="col-md-2 footer-social animated fadeInDown">
+          <h4>Follow Us</h4>
+          <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+      <div class="col-md-3 footer-ns animated fadeInRight">
+          <h4>Newsletter</h4>
+            <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                </span>
+              </div>
+        </div>
+    </div>
+</footer>
+<!--/.Footer-->

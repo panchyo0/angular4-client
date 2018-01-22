@@ -1,0 +1,33 @@
+
+<div class="container news-contaioner">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 news-list">
+        <div class="well">
+          <h4 class="news-h1">Recent:</h4>
+            <ul *ngFor="let item of news" >
+              <p><a href="">{{item.title}}</a></p>
+              <p>{{item.date}}</p>
+            </ul>
+          <h4 class="news-h1">By Year:</h4>
+          <ul>
+            <p><a href="">2017</a></p>
+            <p><a href="">2016</a></p>
+            <p><a href="">2015</a></p>
+          </ul>
+        </div>
+      </div>
+        <div class="col-lg-8" *ngFor="let item of news">
+            <h1 class="news-h1"><a href="{{item.title}}">{{item.title}}</a></h1>
+            <p class="new-font-color">by <a href="{{item.auth}}">{{item.auth}}</a></p>
+            <p><img src="assets/images/clock.png" alt=""> {{item.date}}</p>
+            <p class="new-font-color">{{item.description}}</p>
+            <a class="news-h1" href="{{item.slug}}">Read More</a>
+  	        <p class="new-font-color">
+              Tags:
+              <a href="" *ngFor="let tag of item.Tag"><span class="badge badge-info">{{tag}}</span> </a>
+            <hr>
+        </div>
+      </div>
+    </div>
+</div>

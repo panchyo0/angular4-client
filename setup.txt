@@ -1,0 +1,10 @@
+Open terminal Install dependencies:
+npm install -g @angular/cli
+
+
+In terminal under Task2 folder start Angular4 App:
+1. cd client
+2. npm start or ng serve
+3. then go to http://localhost:4200/
+4. improve the home page and news page
+ 

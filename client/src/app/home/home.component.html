@@ -1,0 +1,73 @@
+
+<!-- <div class="home-container"> -->
+  <div class="jumbotron" style="background:url(assets/images/header.jpg);">
+    <h2 class="jumbotron-h3">{{title}}</h2>
+    <p class="jumbotron-p">
+      The Land Occupancy and Use Information System (LOUIS) Toolkit is a user friendly and robust data management solution for Indigenous communities.
+    </p>
+  </div>
+
+  <div class="news-ticker alert alert-success ">
+    <div class="container">
+      <div class="col-md-12 ">
+        <div class="news-ticker-table">
+          <div class="news-ticker-table-cell">
+              <div id="newsticker-slider" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <h5 style="position:inherit;">
+                    <a  class="news-a" href="{{newstart[0].slug}}" >
+                        <span class="item-type">News |</span>
+                        <span class="item-type-border"></span> {{newstart[0].description}} | <span class="item-date">{{newstart[0].date}}</span>
+                    </a>
+                    <a href="{{newstart[0].slug}}"  class="btn btn-default news-btn">Learn More</a>
+                    </h5>
+                  </div>
+                  <div class="item" *ngFor="let item of news">
+                    <h5 style="position:inherit;">
+                      <a class="news-a" href="{{item.slug}}" >
+                        <span class="item-type">News |</span>
+                        <span class="item-type-border"></span>{{item.description}} | <span class="item-date">{{item.date}}</span>
+                      </a>
+                      <a href="{{item.slug}}"  class="btn btn-default news-btn">Learn More</a>
+                    </h5>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  <div class="container">
+    <h3 style="text-align: center;">Follow the links to find out more</h3>
+    <div class="row tools">
+      <div class="col-md-6 text-center">
+        <img class="img-rounded" style="z-index: 2000;" src="assets/images/house.jpg">
+        <h2>Assets</h2>
+        <p>LOUIS Assets is a user friendly asset management tool that makes it easy identify and track deficiencies with assets as well as  schedule repairs and maintenance while tracking costs and staff time.</p>
+        <p><a class="btn btn-default tool-btn" href="#">View details »</a></p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img class="img-rounded" src="assets/images/contract.png">
+        <h2>Heritage</h2>
+        <p>LOUIS Heritage is stores the text, audio, video, photos and map features together to ensure that the data is an accurate representation of the shared knowledge and context is preserved.</p>
+        <p><a class="btn btn-default tool-btn" href="#">View details »</a></p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img class="img-rounded" src="assets/images/assistance.png">
+        <h2>Layers</h2>
+        <p> LOUIS Layers provides the means for communities to integrate any other type of vector spatial data from a variety of sources include wildlife monitoring, site visits or infrastructure. </p>
+        <p><a class="btn btn-default tool-btn" href="#">View details »</a></p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img class="img-rounded" src="assets/images/worldwide.png">
+        <h2>Referrals</h2>
+        <p>LOUIS Referrals is a highly flexible and easy-to-use solution to manage consultation and land referrals. With LOUIS Referrals you can configure the system to match your regulatory environment and your internal needs.</p>
+        <p><a class="btn btn-default tool-btn" href="#">View details »</a></p>
+      </div>
+   </div><!-- /.row -->
+</div>
